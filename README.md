@@ -1,2 +1,0 @@
-# tiktokreportbot
-Tiktok Report Bot
