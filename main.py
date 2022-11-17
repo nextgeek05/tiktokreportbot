@@ -15,7 +15,7 @@ else:
 while True:
     if proxy_enabled==False:
         r=requests.get(report_link)
-        print(r.text) + str("Report n: ")+str(n)
+        print(str(r.text) + str("     Report n: ")+ str(n))
         n=n+1
     else:
         proxy=importproxy(n)
@@ -24,7 +24,7 @@ while True:
         }
         try:
             r=requests.get(report_link, proxies=proxies)
-            print(r.text) + str("Report n: ")+str(n)
+            print(str(r.text) + str("     Report n: ")+ str(n))
             n=n+1
         except (requests.exceptions):
             print("Proxy Error, check your proxy list............. Skipping proxy")
